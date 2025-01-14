@@ -4,7 +4,7 @@
  *
  * This file contains the Podcast class for registering the custom post type 'podcast'.
  *
- * @package EBFP\Backend
+ * @package EBFP\Backend\Inc\CPT
  * @since 1.0.0
  */
 

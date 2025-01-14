@@ -4,7 +4,7 @@
  *
  * Handles the registration of a custom metabox for the 'podcast' post type.
  *
- * @package EBFP\Backend
+ * @package EBFP\Backend\Inc\MetaBox
  * @since 1.0.0
  */
 
