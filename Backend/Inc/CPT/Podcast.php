@@ -1,20 +1,20 @@
 <?php
 /**
- * CustomPostType.php
+ * Podcast.php
  *
- * This file contains the CustomPostType class for registering the custom post type 'podcast'.
+ * This file contains the Podcast class for registering the custom post type 'podcast'.
  *
  * @package EBFP\Backend
  * @since 1.0.0
  */
 
-namespace EBFP\Backend\Inc;
+namespace EBFP\Backend\Inc\CPT;
 
 if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly
 }
 
-class CustomPostType
+class Podcast
 {
     public function __construct()
     {

@@ -14,12 +14,14 @@ if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly
 }
 
-use EBFP\Backend\Inc\CustomPostType;
+use EBFP\Backend\Inc\CPT\Podcast;
+use EBFP\Backend\Inc\MetaBox\PodcastMetabox;
 
 class Backend
 {
 
-    protected $custom_post_type;
+    protected $podcast;
+    protected $podcast_metabox;
 
     public function __construct()    
     {
@@ -32,7 +34,8 @@ class Backend
      */
     public function init()
     {
-        $this->custom_post_type = new CustomPostType();
+        $this->podcast = new Podcast();
+        $this->podcast_metabox = new PodcastMetabox();
     }
 
 }
