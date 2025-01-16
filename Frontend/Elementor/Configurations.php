@@ -1,4 +1,4 @@
-<?php 
+<?php
 /**
  * Configurations.php
  *
@@ -27,10 +27,11 @@ use EBFP\Frontend\Elementor\Assets\Assets;
  * @package EBFP\Frontend\Elementor
  * @since 1.0.0
  */
-class Configurations {
+class Configurations
+{
 
     protected $assets;
-     /**
+    /**
      * Minimum Elementor Version
      */
     const MINIMUM_ELEMENTOR_VERSION = '3.19.0';
@@ -56,7 +57,7 @@ class Configurations {
         }
         return self::$_instance;
     }
-       /**
+    /**
      * Perform some compatibility checks to make sure basic requirements are meet.
      */
     public function __construct()
@@ -101,17 +102,17 @@ class Configurations {
         return true;
     }
 
-        /**
+    /**
      * setConstants.
      */
 
-     public function setConstants()
-     {
-         define('EBFP_ELEMENTOR_ASSETS', plugin_dir_url(__FILE__) . 'Assets');
-         define('EBFP_ELEMENTOR_PATH', plugin_dir_path(__FILE__));
- 
-     }
-         /**
+    public function setConstants()
+    {
+        define('EBFP_ELEMENTOR_ASSETS', plugin_dir_url(__FILE__) . 'Assets');
+        define('EBFP_ELEMENTOR_PATH', plugin_dir_path(__FILE__));
+
+    }
+    /**
      * Warning when the site doesn't have Elementor installed or activated.
      */
     public function admin_notice_missing_main_plugin()
@@ -124,7 +125,7 @@ class Configurations {
         $message = sprintf(
             // translators: 1 Plugin name, 2 Elementor plugin name, 3 Required Elementor version
             esc_html__('"%1$s" requires "%2$s" version %3$s or greater.', 'event-business-formula'),
-            esc_html(PRIMEKIT_NAME),
+            esc_html(EBFP_NAME),
             esc_html__('Elementor', 'event-business-formula'),
             esc_html(self::MINIMUM_ELEMENTOR_VERSION)
         );
@@ -143,7 +144,7 @@ class Configurations {
         $message = sprintf(
             // translators: 1 Plugin name, 2 Elementor plugin name, 3 Required Elementor version
             esc_html__('"%1$s" requires "%2$s" version %3$s or greater.', 'event-business-formula'),
-            esc_html(PRIMEKIT_NAME),
+            esc_html(EBFP_NAME),
             esc_html__('Elementor', 'event-business-formula'),
             self::MINIMUM_ELEMENTOR_VERSION
         );
@@ -164,7 +165,7 @@ class Configurations {
         $message = sprintf(
             /* translators: 1: Plugin name 2: PHP 3: Required PHP version */
             esc_html__('"%1$s" requires "%2$s" version %3$s or greater.', 'event-business-formula'),
-            '<strong>' . PRIMEKIT_NAME . '</strong>',
+            '<strong>' . EBFP_NAME . '</strong>',
             '<strong>' . esc_html__('PHP', 'event-business-formula') . '</strong>',
             self::MINIMUM_PHP_VERSION
         );
@@ -172,7 +173,7 @@ class Configurations {
         printf('<div class="notice notice-warning is-dismissible"><p>%1$s</p></div>', wp_kses_post($message));
     }
 
-        /**
+    /**
      * Initializes the classes used by the plugin.
      *
      * This function instantiates the functions and assets classes.
@@ -199,12 +200,12 @@ class Configurations {
      * @return void
      */
 
-     public function register_widgets($widgets_manager)
-     {
- 
-         $widgets_manager->register(new \EBFP\Frontend\Elementor\Widgets\Podcast\Main());
- 
-     }
- 
+    public function register_widgets($widgets_manager)
+    {
+
+        $widgets_manager->register(new \EBFP\Frontend\Elementor\Widgets\Podcast\Main());
+
+    }
+
 
 }

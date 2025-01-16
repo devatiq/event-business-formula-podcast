@@ -27,8 +27,18 @@ class Backend
     protected $assets;
     protected $functions;
 
+    /**
+     * Constructor for the Backend class.
+     *
+     * This method initializes the admin-specific functionality
+     * by calling the init method.
+     *
+     * @since 1.0.0
+     */
+
     public function __construct()    
     {
+        $this->define_admin_constants();
         $this->init();       
     }
     /**
@@ -43,5 +53,17 @@ class Backend
         $this->assets = new Assets();
         $this->functions = new Functions();
     }
+
+    /**
+     * Define constants for the admin panel.
+     *
+     * @since 1.0.0
+     */
+    private function define_admin_constants()
+    {
+        define('EBFP_ADMIN_PATH', plugin_dir_path(__FILE__));
+        define('EBFP_ADMIN_URL', plugin_dir_url(__FILE__));
+    }
+
 
 }

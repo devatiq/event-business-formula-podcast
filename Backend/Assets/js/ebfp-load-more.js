@@ -16,11 +16,18 @@ jQuery(document).ready(function ($) {
                 $('.ebfp-podcast-load-more').text('Loading...');
             },
             success: function (response) {
-                if ($.trim(response) === '') {
-                    $('.ebfp-podcast-load-more').hide();
+                if (response.success) {
+                    // Append the new posts to the grid
+                    $('.ebfp-podcast-grid').append(response.data.html);
+
+                    // Hide the button if no more posts
+                    if (!response.data.more) {
+                        $('.ebfp-podcast-load-more').hide();
+                    } else {
+                        $('.ebfp-podcast-load-more').text('Load More');
+                    }
                 } else {
-                    $('.ebfp-podcast-grid').append(response);
-                    $('.ebfp-podcast-load-more').text('Load More');
+                    $('.ebfp-podcast-load-more').hide(); // Hide button on error or no posts
                 }
             },
             error: function () {

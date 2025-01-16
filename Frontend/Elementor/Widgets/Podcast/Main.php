@@ -1,5 +1,24 @@
 <?php
+/**
+ * Main.php
+ *
+ * Handles the main logic for the Elementor widget 'Podcast'.
+ *
+ * @package EBFP\Frontend\Elementor\Widgets\Podcast
+ * @since 1.0.0
+ */
 namespace EBFP\Frontend\Elementor\Widgets\Podcast;
+
+/**
+ * Class Main
+ *
+ * This class extends the Elementor Widget_Base class to create a custom widget
+ * for displaying podcasts in the Elementor plugin. It includes methods for 
+ * defining the widget's name, title, icon, and other attributes and functionalities.
+ *
+ * @package EBFP\Frontend\Elementor\Widgets\Podcast
+ * @since 1.0.0
+ */
 
 class Main extends \Elementor\Widget_Base
 {
@@ -39,12 +58,22 @@ class Main extends \Elementor\Widget_Base
 
 
 		// Layout Section Start
-
 		$this->start_controls_section(
 			'section_layout',
 			[
 				'label' => esc_html__('Layout', 'event-business-formula'),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
+			]
+		);
+		$this->add_control(
+			'posts_per_page',
+			[
+				'label' => esc_html__('Posts Per Page', 'event-business-formula'),
+				'type' => \Elementor\Controls_Manager::NUMBER,
+				'default' => 8,
+				'min' => 2,
+				'max' => 20,
+				'step' => 2,
 			]
 		);
 
@@ -97,12 +126,10 @@ class Main extends \Elementor\Widget_Base
 		);
 
 		$this->end_controls_section();
-
 		// Layout Section End
 
 
 		// Style Tab Start
-
 		$this->start_controls_section(
 			'section_box_style',
 			[
@@ -399,6 +426,13 @@ class Main extends \Elementor\Widget_Base
 
 	}
 
+	/**
+	 * Render the widget output in the editor.
+	 *
+	 * Written in PHP and used to generate the final HTML.
+	 *
+	 * @since 1.0.0
+	 */
 	protected function render()
 	{
 		$settings = $this->get_settings_for_display();

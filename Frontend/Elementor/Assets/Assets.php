@@ -26,10 +26,24 @@ if (!defined('ABSPATH')) {
  */
 
 class Assets {
+    /**
+     * Initializes the Assets class.
+     *
+     * This method hooks into WordPress to register the frontend assets for the Elementor extension.
+     *
+     * @since 1.0.0
+     */
     public function __construct() {
         add_action('wp_enqueue_scripts', [$this, 'register_assets']);
     }
 
+    /**
+     * Registers the frontend assets for the Elementor extension.
+     *
+     * This method enqueues the CSS file required for the Elementor extension.
+     *
+     * @since 1.0.0
+     */
     public function register_assets() {
         wp_register_style('ebfp-style', EBFP_ELEMENTOR_ASSETS . '/css/style.css');
     }
