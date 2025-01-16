@@ -73,6 +73,13 @@ class PodcastMetabox
      *
      * @since 1.0.0
      */
+    /**
+     * Saves the metabox data when the post is saved.
+     *
+     * @param int $post_id The ID of the current post.
+     *
+     * @since 1.0.0
+     */
     public function save_metabox_data($post_id)
     {
         // Verify nonce.
@@ -92,8 +99,25 @@ class PodcastMetabox
 
         // Check if the iframe code field is set.
         if (isset($_POST['ebfp_podcast_iframe_code'])) {
-            $iframe_code = sanitize_textarea_field($_POST['ebfp_podcast_iframe_code']);
+            // Define allowed HTML tags and attributes for iframe.
+            $allowed_html = [
+                'iframe' => [
+                    'style' => [],
+                    'title' => [],
+                    'src' => [],
+                    'width' => [],
+                    'height' => [],
+                    'scrolling' => [],
+                    'allowfullscreen' => [],
+                ],
+            ];
+
+            // Sanitize the iframe code using wp_kses.
+            $iframe_code = wp_kses($_POST['ebfp_podcast_iframe_code'], $allowed_html);
+
+            // Save the sanitized iframe code to post meta.
             update_post_meta($post_id, '_ebfp_podcast_iframe_code', $iframe_code);
         }
     }
+
 }

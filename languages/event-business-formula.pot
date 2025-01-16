@@ -1,0 +1,245 @@
+# Copyright (C) 2025 SupreoX Limited
+# This file is distributed under the GPL2.
+msgid ""
+msgstr ""
+"Project-Id-Version: Event Business Formula Podcast 1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/event-business-formula-podcast\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-01-16T12:01:03+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.11.0\n"
+"X-Domain: event-business-formula\n"
+
+#. Plugin Name of the plugin
+#: event-business-formula.php
+#: event-business-formula.php:61
+msgid "Event Business Formula Podcast"
+msgstr ""
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+#: event-business-formula.php
+msgid "https://supreox.com"
+msgstr ""
+
+#. Description of the plugin
+#: event-business-formula.php
+msgid "A WordPress plugin for managing and displaying podcasts for the Event Business Formula."
+msgstr ""
+
+#. Author of the plugin
+#: event-business-formula.php
+msgid "SupreoX Limited"
+msgstr ""
+
+#: Backend/Inc/CPT/Podcast.php:32
+#: Backend/Inc/CPT/Podcast.php:34
+msgid "Podcasts"
+msgstr ""
+
+#: Backend/Inc/CPT/Podcast.php:33
+#: Frontend/Elementor/Widgets/Podcast/Main.php:33
+msgid "Podcast"
+msgstr ""
+
+#: Backend/Inc/CPT/Podcast.php:35
+msgid "Add New"
+msgstr ""
+
+#: Backend/Inc/CPT/Podcast.php:36
+msgid "Add New Podcast"
+msgstr ""
+
+#: Backend/Inc/CPT/Podcast.php:37
+msgid "Edit Podcast"
+msgstr ""
+
+#: Backend/Inc/CPT/Podcast.php:38
+msgid "New Podcast"
+msgstr ""
+
+#: Backend/Inc/CPT/Podcast.php:39
+msgid "View Podcast"
+msgstr ""
+
+#: Backend/Inc/CPT/Podcast.php:40
+msgid "All Podcasts"
+msgstr ""
+
+#: Backend/Inc/CPT/Podcast.php:41
+msgid "Search Podcasts"
+msgstr ""
+
+#: Backend/Inc/CPT/Podcast.php:42
+msgid "No podcasts found."
+msgstr ""
+
+#: Backend/Inc/CPT/Podcast.php:43
+msgid "No podcasts found in Trash."
+msgstr ""
+
+#: Backend/Inc/MetaBox/PodcastMetabox.php:41
+msgid "Podcast Embed Code"
+msgstr ""
+
+#: Backend/Inc/MetaBox/PodcastMetabox.php:65
+msgid "Enter the iframe embed code for the podcast:"
+msgstr ""
+
+#: Backend/Templates/single-ebfp-podcast.php:40
+msgid "No embed code available for this podcast."
+msgstr ""
+
+#. translators: 1 Plugin name, 2 Elementor plugin name, 3 Required Elementor version
+#. translators: 1: Plugin name 2: PHP 3: Required PHP version
+#: Frontend/Elementor/Configurations.php:127
+#: Frontend/Elementor/Configurations.php:146
+#: Frontend/Elementor/Configurations.php:167
+msgid "\"%1$s\" requires \"%2$s\" version %3$s or greater."
+msgstr ""
+
+#: Frontend/Elementor/Configurations.php:129
+#: Frontend/Elementor/Configurations.php:148
+msgid "Elementor"
+msgstr ""
+
+#: Frontend/Elementor/Configurations.php:169
+msgid "PHP"
+msgstr ""
+
+#: Frontend/Elementor/Widgets/Podcast/Main.php:64
+msgid "Layout"
+msgstr ""
+
+#: Frontend/Elementor/Widgets/Podcast/Main.php:71
+msgid "Posts Per Page"
+msgstr ""
+
+#: Frontend/Elementor/Widgets/Podcast/Main.php:83
+msgid "Grid Columns"
+msgstr ""
+
+#: Frontend/Elementor/Widgets/Podcast/Main.php:87
+msgid "1 Column"
+msgstr ""
+
+#: Frontend/Elementor/Widgets/Podcast/Main.php:88
+msgid "2 Columns"
+msgstr ""
+
+#: Frontend/Elementor/Widgets/Podcast/Main.php:89
+msgid "3 Columns"
+msgstr ""
+
+#: Frontend/Elementor/Widgets/Podcast/Main.php:90
+msgid "4 Columns"
+msgstr ""
+
+#: Frontend/Elementor/Widgets/Podcast/Main.php:101
+#: Frontend/Elementor/Widgets/Podcast/Main.php:197
+msgid "Gap Between Items"
+msgstr ""
+
+#: Frontend/Elementor/Widgets/Podcast/Main.php:120
+msgid "Load More Button"
+msgstr ""
+
+#: Frontend/Elementor/Widgets/Podcast/Main.php:123
+msgid "Show"
+msgstr ""
+
+#: Frontend/Elementor/Widgets/Podcast/Main.php:124
+msgid "Hide"
+msgstr ""
+
+#: Frontend/Elementor/Widgets/Podcast/Main.php:136
+msgid "Box"
+msgstr ""
+
+#: Frontend/Elementor/Widgets/Podcast/Main.php:145
+msgid "Background"
+msgstr ""
+
+#: Frontend/Elementor/Widgets/Podcast/Main.php:156
+msgid "Box Shadow"
+msgstr ""
+
+#: Frontend/Elementor/Widgets/Podcast/Main.php:165
+msgid "Border"
+msgstr ""
+
+#: Frontend/Elementor/Widgets/Podcast/Main.php:173
+#: Frontend/Elementor/Widgets/Podcast/Main.php:232
+msgid "Border Radius"
+msgstr ""
+
+#: Frontend/Elementor/Widgets/Podcast/Main.php:185
+#: Frontend/Elementor/Widgets/Podcast/Main.php:356
+msgid "Padding"
+msgstr ""
+
+#: Frontend/Elementor/Widgets/Podcast/Main.php:224
+msgid "Thumbnail"
+msgstr ""
+
+#: Frontend/Elementor/Widgets/Podcast/Main.php:248
+msgid "Title"
+msgstr ""
+
+#: Frontend/Elementor/Widgets/Podcast/Main.php:256
+#: Frontend/Elementor/Widgets/Podcast/Main.php:335
+msgid "Color"
+msgstr ""
+
+#: Frontend/Elementor/Widgets/Podcast/Main.php:269
+#: Frontend/Elementor/Widgets/Podcast/Main.php:347
+msgid "Typography"
+msgstr ""
+
+#: Frontend/Elementor/Widgets/Podcast/Main.php:280
+msgid "Button"
+msgstr ""
+
+#: Frontend/Elementor/Widgets/Podcast/Main.php:288
+msgid "Space"
+msgstr ""
+
+#: Frontend/Elementor/Widgets/Podcast/Main.php:309
+msgid "Alignment"
+msgstr ""
+
+#: Frontend/Elementor/Widgets/Podcast/Main.php:313
+msgid "Left"
+msgstr ""
+
+#: Frontend/Elementor/Widgets/Podcast/Main.php:317
+msgid "Center"
+msgstr ""
+
+#: Frontend/Elementor/Widgets/Podcast/Main.php:321
+msgid "Right"
+msgstr ""
+
+#: Frontend/Elementor/Widgets/Podcast/Main.php:368
+msgid "Width"
+msgstr ""
+
+#: Frontend/Elementor/Widgets/Podcast/Main.php:394
+msgid "Background Color"
+msgstr ""
+
+#: Frontend/Elementor/Widgets/Podcast/Main.php:405
+msgid "Hover Color"
+msgstr ""
+
+#: Frontend/Elementor/Widgets/Podcast/Main.php:416
+msgid "Hover Background Color"
+msgstr ""
+
+#: Frontend/Elementor/Widgets/Podcast/Renderview.php:39
+msgid "Load More"
+msgstr ""
