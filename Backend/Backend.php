@@ -16,12 +16,16 @@ if (!defined('ABSPATH')) {
 
 use EBFP\Backend\Inc\CPT\Podcast;
 use EBFP\Backend\Inc\MetaBox\PodcastMetabox;
+use EBFP\Backend\Assets\Assets;
+use EBFP\Backend\Inc\Functions;
 
 class Backend
 {
 
     protected $podcast;
     protected $podcast_metabox;
+    protected $assets;
+    protected $functions;
 
     public function __construct()    
     {
@@ -36,6 +40,8 @@ class Backend
     {
         $this->podcast = new Podcast();
         $this->podcast_metabox = new PodcastMetabox();
+        $this->assets = new Assets();
+        $this->functions = new Functions();
     }
 
 }

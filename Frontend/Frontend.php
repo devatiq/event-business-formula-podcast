@@ -14,15 +14,22 @@ if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly
 }
 
+use EBFP\Frontend\Elementor\Configurations;
+
 class Frontend
 {
+    protected $configuration;
     public function __construct()
     {
-        add_action('wp_enqueue_scripts', [$this, 'enqueue_frontend_scripts']);
-    }
-
-    public function enqueue_frontend_scripts()
-    {
+        $this->init();
        
     }
+
+   public function init()
+    {
+        $this->configuration = Configurations::instance();
+        $this->configuration->init();
+    }
+
+
 }
