@@ -1,0 +1,136 @@
+.ebfp-container {
+  max-width: 1320px;
+  margin: 10px auto;
+}
+.ebfp-podcast-single-heading {
+  background-color: #f8f8f8;
+  padding: 50px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ebfp-podcast-title {
+  color: #0c1115;
+  font-size: 40px;
+  line-height: 1.5em;
+  font-weight: 700;
+  text-align: center;
+  width: 45%;
+}
+.ebfp-podcast-thumbnail img {
+  width: 100%;
+  height: auto;
+}
+.ebfp-podcast-player {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.ebfp-podcast-single-info {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  gap: 50px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+.ebfp-author-image img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.ebfp-podcast-author {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  position: relative;
+}
+.ebfp-podcast-author::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -25px;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 20px;
+  background-color: #ccc;
+}
+.ebfp-podcast-date {
+    font-size: 15px;
+    letter-spacing: 3px;
+    color: #6a6b6c;
+}
+
+.ebfp-author-name {
+    letter-spacing: 3px;
+    color: #6a6b6c;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.ebfp-author-name a {
+    color: #1f78bc;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.ebfp-podcast-content p {
+    color:#6a6b6c;
+    font-size: 18px;
+    line-height: 1.5em;
+}
+.ebfp-podcast-content a {
+    color: #1f78bc;
+}
+@media (max-width: 1280px) {
+    .ebfp-podcast-title {
+        width: 70%;
+    } 
+}
+@media (max-width: 1024px) {
+    .ebfp-container {
+        width: 100%;
+        padding: 0 20px;
+    }
+    .ebfp-podcast-single-heading {
+        padding: 30px;
+    }
+    .ebfp-podcast-title {
+        font-size: 30px;
+        width: 80%;
+    }   
+}
+
+@media (max-width: 767px) {
+    .ebfp-podcast-single-heading {
+        padding: 30px;
+    }
+    .ebfp-podcast-title {
+        font-size: 20px;
+        width: 100%;
+    }
+    .ebfp-podcast-single-info {
+        gap: 15px;
+    }
+    .ebfp-podcast-author {
+        gap: 8px;
+    }
+    .ebfp-author-name {
+        letter-spacing: 1px;
+        font-size: 10px;
+    }
+    .ebfp-author-image img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+    .ebfp-podcast-date {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+    .ebfp-podcast-author::after {
+        height: 13px;
+    }
+}
+
