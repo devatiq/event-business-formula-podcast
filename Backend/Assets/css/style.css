@@ -169,7 +169,7 @@ Author Box
 .ebfp-podcast-author-image {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
 }
 
 .ebfp-podcast-author-image img {
@@ -187,8 +187,8 @@ Author Box
 }
 
 .ebfp-podcast-author-social svg {
-  width: 40px;
-  height: 40px;
+  width: 25px;
+  height: 25px;
   border: 2px solid #002f47;
   padding: 10px;
   border-radius: 3px;
@@ -232,6 +232,7 @@ Author Box
   display: flex;
   flex-direction: column;
   gap: 10px;
+  justify-content: center;
 }
 
 .ebfp-podcast-author-name {

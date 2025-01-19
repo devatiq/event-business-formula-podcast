@@ -201,14 +201,8 @@ $x_url = get_the_author_meta('x', $author_id);
                         <h4>About the author</h4>
                         <h2><?php echo esc_html(get_the_author_meta('display_name', $author_id)); ?></h2>
                     </div>
-                    <div class="ebfp-podcast-author-description">
-                        <p>For two decades, Eric Rozenberg has consulted with Fortune 500 companies and produced
-                            conferences
-                            in more than 50 countries across diverse industries. His focus is creating meetings that are
-                            not
-                            only breathtakingly memorable but which bring corporate strategies to life and amplify team
-                            motivation/performance.</p>
-                        <?php echo get_the_author_meta('description', $author_id); ?>
+                    <div class="ebfp-podcast-author-description">                        
+                        <p><?php echo get_the_author_meta('description', $author_id); ?></p>
                     </div>
                 </div>
             </div>
