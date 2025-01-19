@@ -54,7 +54,7 @@ class Functions{
         check_ajax_referer('ebfp_load_more_nonce', 'nonce'); // Security check
     
         $paged = isset($_POST['page']) ? intval($_POST['page']) : 1;
-        $posts_per_page = 6;
+        $posts_per_page = 12;
     
         $podcast_query = new \WP_Query([
             'post_type' => 'ebfp_podcast',
