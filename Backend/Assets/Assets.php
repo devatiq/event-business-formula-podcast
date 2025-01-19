@@ -39,8 +39,8 @@ class Assets {
      * @since 1.0.0
      */
    public function ebfp_enqueue_scripts() {
-        wp_enqueue_style( 'ebfp-backend-style', EBFP_BACKEND_ASSETS_URL . 'css/style.css' ); 
-        wp_enqueue_script('ebfp-load-more', EBFP_BACKEND_ASSETS_URL . 'js/ebfp-load-more.js', ['jquery'], '1.0', true);
+        wp_enqueue_style( 'ebfp-backend-style', EBFP_BACKEND_ASSETS_URL . 'css/style.css', [], EBFP_VERSION, 'all' ); 
+        wp_enqueue_script('ebfp-load-more', EBFP_BACKEND_ASSETS_URL . 'js/ebfp-load-more.js', ['jquery'], EBFP_VERSION, true);
     
         wp_localize_script('ebfp-load-more', 'ebfpAjax', [
             'ajaxUrl' => admin_url('admin-ajax.php'),

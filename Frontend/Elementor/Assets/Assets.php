@@ -45,6 +45,6 @@ class Assets {
      * @since 1.0.0
      */
     public function register_assets() {
-        wp_register_style('ebfp-style', EBFP_ELEMENTOR_ASSETS . '/css/style.css');
+        wp_register_style('ebfp-style', EBFP_ELEMENTOR_ASSETS . '/css/style.css', [], EBFP_VERSION);
     }
 }

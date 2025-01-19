@@ -118,7 +118,7 @@ $x_url = get_the_author_meta('x', $author_id);
         <div class="ebfp-podcast-footer-author-area ebfp-container">
             <div class="ebfp-podcast-footer-author">
                 <div class="ebfp-podcast-author-image">
-                    <?php echo get_avatar($author_id, 250); ?>
+                    <?php echo get_avatar($author_id, 180); ?>
                     <div class="ebfp-podcast-author-social">
                         <?php if ($facebook_url): ?>
                             <a href="<?php echo esc_url($facebook_url); ?>" target="_blank" rel="noopener noreferrer">
