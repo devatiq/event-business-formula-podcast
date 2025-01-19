@@ -18,6 +18,7 @@ use EBFP\Backend\Inc\CPT\Podcast;
 use EBFP\Backend\Inc\MetaBox\PodcastMetabox;
 use EBFP\Backend\Assets\Assets;
 use EBFP\Backend\Inc\Functions;
+use EBFP\Backend\Inc\UserProfile;
 
 class Backend
 {
@@ -26,6 +27,7 @@ class Backend
     protected $podcast_metabox;
     protected $assets;
     protected $functions;
+    protected $user_profile;
 
     /**
      * Constructor for the Backend class.
@@ -52,6 +54,7 @@ class Backend
         $this->podcast_metabox = new PodcastMetabox();
         $this->assets = new Assets();
         $this->functions = new Functions();
+        $this->user_profile = new UserProfile();
     }
 
     /**

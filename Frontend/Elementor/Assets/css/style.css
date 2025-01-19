@@ -39,6 +39,7 @@
     flex-direction: column;
 }
 
+
 @media (max-width: 767px) {
     .ebfp-podcast-grid {
         grid-template-columns: repeat(1, minmax(200px, 1fr));

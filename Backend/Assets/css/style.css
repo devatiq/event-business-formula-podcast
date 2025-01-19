@@ -2,6 +2,7 @@
   max-width: 1320px;
   margin: 10px auto;
 }
+
 .ebfp-podcast-single-heading {
   background-color: #f8f8f8;
   padding: 50px;
@@ -16,7 +17,7 @@
   line-height: 1.5em;
   font-weight: 700;
   text-align: center;
-  width: 45%;
+  width: 50%;
 }
 .ebfp-podcast-thumbnail img {
   width: 100%;
@@ -74,7 +75,9 @@
     font-weight: 600;
     text-transform: uppercase;
 }
-
+.ebfp-podcast-content {
+    margin-bottom: 50px;
+}
 .ebfp-podcast-content p {
     color:#6a6b6c;
     font-size: 18px;
@@ -85,6 +88,62 @@
 }
 .ebfp-podcast-content a {
     color: #1f78bc;
+}
+
+/*------------------
+Author Box
+------------------*/
+.ebfp-podcast-footer-author-area {
+    padding: 8px;
+    background-image: repeating-linear-gradient(135deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.08) 3px, transparent 3px, transparent 6px);
+    background-size: auto;
+    background-position: 50% 50% ;
+}
+.ebfp-podcast-footer-author {
+    background-color: #fff;
+    display: flex;
+    gap: 20px;
+    padding: 35px;
+}
+.ebfp-podcast-author-image {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ebfp-podcast-author-image img {
+    border-radius: 100%;
+}
+
+.ebfp-podcast-author-social {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.ebfp-podcast-author-social a {
+    display: flex;
+}
+
+.ebfp-podcast-author-social svg {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #002F47;
+    padding: 10px;
+    border-radius: 3px;
+    fill: #002F47;
+}
+.ebfp-podcast-author-social svg.ebfp-facebook path{
+    fill: #002F47 !important;
+}
+.ebfp-podcast-author-social svg:hover {
+    fill:#FF8C03;
+    border-color:#FF8C03;
+}
+.ebfp-podcast-author-social svg.ebfp-facebook:hover path{
+      fill:#FF8C03 !important;
+    border-color:#FF8C03;
+
 }
 @media (max-width: 1280px) {
     .ebfp-podcast-title {
