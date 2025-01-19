@@ -47,7 +47,7 @@ class Podcast
             'labels'             => $labels,
             'public'             => true,
             'has_archive'        => true,
-            'supports'           => ['title', 'editor', 'thumbnail', 'excerpt'],
+            'supports'           => ['title', 'editor', 'thumbnail', 'excerpt', 'author'],
             'show_in_rest'       => true, // Enable Gutenberg editor
             'menu_icon'          => 'dashicons-microphone',
             'rewrite'            => ['slug' => 'podcast'],
